@@ -26,14 +26,13 @@ const main = async () => {
     .toString('utf8'))
 
   console.log('$$$ decrypted', decrypted)
-
 }
 
 main()
-.then(() => {
-  console.log('program terminated.')
-})
-.catch(e => {
-  console.log('ERROR:', e)
-  process.exit(2021)
-})
+  .then(() => {
+    console.log('program terminated.')
+  })
+  .catch(e => {
+    console.log('ERROR:', e)
+    process.exit(2021)
+  })
